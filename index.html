@@ -39,38 +39,19 @@
         <div class="container">
             <h2>Our Courses</h2>
             <p>
-                Access diverse courses from partner institutions, tailored to your learning needs and native language. 
-                Learn effectively with guided support and a community-driven approach.
+                Explore a variety of subjects from trusted institutions, taught in a language you understand best. 
+                Whether it's technology, arts, or business, Native Nest has something for everyone.
             </p>
-            <ul class="course-list">
-                <li>Business Administration</li>
-                <li>Engineering Fundamentals</li>
-                <li>Data Science and AI</li>
-                <li>Creative Arts</li>
-                <li>Health Sciences</li>
-            </ul>
         </div>
     </section>
 
     <!-- Pricing Section -->
     <section id="pricing" class="section pricing">
         <div class="container">
-            <h2>Flexible Pricing</h2>
+            <h2>Pricing Options</h2>
             <p>
-                Choose from individual courses, subscription plans, or financial assistance through scholarships and grants.
+                We offer flexible subscription models, grants, and scholarships to make learning accessible to everyone.
             </p>
-            <div class="pricing-options">
-                <div class="pricing-card">
-                    <h3>Subscription</h3>
-                    <p><strong>$29/month</strong></p>
-                    <p>Unlimited course access and guided support.</p>
-                </div>
-                <div class="pricing-card">
-                    <h3>Scholarships</h3>
-                    <p><strong>Apply for full assistance</strong></p>
-                    <p>Access at no cost based on need.</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -78,25 +59,37 @@
     <section id="contact" class="section contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>
-                Have questions or need help? Reach out to our team using the form below.
-            </p>
-            <form action="https://example.com/submit" method="POST" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
+            <form id="contactForm" onsubmit="handleFormSubmission(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Native Nest. All Rights Reserved.</p>
+            <p>© 2024 Native Nest. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function handleFormSubmission(event) {
+            event.preventDefault(); // Prevent default form submission
+            alert("Thank you for reaching out! We will get back to you shortly.");
+            document.getElementById('contactForm').reset(); // Clear the form fields
+        }
+    </script>
 </body>
 </html>
-
-
