@@ -1,68 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Native Nest - Redefining multilingual learning for global success.">
-  <title>Native Nest - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <meta name="description" content="Native Nest - Your gateway to multilingual education.">
-  <title>Native Nest</title>
-<link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native Nest - Learn in Your Language</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <h1>Native Nest</h1>
-    <p>Your Gateway to Multilingual Excellence</p>
-    <div class="container">
-      <h1>Native Nest</h1>
-      <p>Your Gateway to Multilingual Education</p>
-    </div>
-</header>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Native Nest</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="features.html">Features</a>
-    <a href="courses.html">Courses</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="login.html" class="login">Login</a>
-    <a href="signup.html" class="signup">Sign Up</a>
-    <a href="signup.html">Sign Up</a>
-    <a href="login.html">Login</a>
-</nav>
-  <section class="hero">
-    <h2>Welcome to Native Nest</h2>
-    <p>Empowering learners across the globe through personalized and inclusive education.</p>
-    <a href="features.html" class="cta">Explore Features</a>
-  </section>
-  <section class="intro">
-    <h2>Why Choose Native Nest?</h2>
-    <p>Our platform is designed for anyone seeking a better way to learn. By offering courses in multiple languages, guided by expert mentors, and powered by innovative tools, we make education accessible and effective for all.</p>
-  </section>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h2>Learn Smarter, Not Harder</h2>
-        <p>Empowering multilingual learners to excel with tailored educational content.</p>
-        <a href="features.html" class="cta-button">Explore Features</a>
-      </div>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Native Nest</h2>
+            <p>
+                Native Nest bridges the gap between institutional learning and understanding by providing courses 
+                taught in your native language. With content delivered by teaching assistants and former students, 
+                we ensure every learner feels confident and connected, no matter their language background.
+            </p>
+        </div>
     </section>
 
-    <section class="about">
-      <div class="container">
-        <h2>Why Native Nest?</h2>
-        <p>Native Nest is built to bridge the gap in education for multilingual learners. Our platform ensures that every learner, regardless of their native language, receives accessible, high-quality educational resources.</p>
-        <ul>
-          <li>Courses available in your native language.</li>
-          <li>Expert guidance and resources tailored to your needs.</li>
-          <li>Interactive tools to enhance your learning experience.</li>
-        </ul>
-      </div>
+    <!-- Courses Section -->
+    <section id="courses" class="section courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <p>
+                Access a diverse range of courses from partner institutions, customized to suit your learning style 
+                and language needs. Learn effectively with guided support and peer insights.
+            </p>
+            <ul class="course-list">
+                <li>Business Administration</li>
+                <li>Engineering Fundamentals</li>
+                <li>Data Science and AI</li>
+                <li>Creative Arts</li>
+                <li>Health Sciences</li>
+            </ul>
+        </div>
     </section>
-  </main>
 
-<footer>
-<p>&copy; 2024 Native Nest. All Rights Reserved.</p>
-</footer>
+    <!-- Pricing Section -->
+    <section id="pricing" class="section pricing">
+        <div class="container">
+            <h2>Flexible Pricing</h2>
+            <p>
+                Whether you're looking for individual courses, subscription plans, or financial assistance through 
+                scholarships and grants, we have options to suit your needs.
+            </p>
+            <div class="pricing-options">
+                <div class="pricing-card">
+                    <h3>Subscription</h3>
+                    <p>$29/month</p>
+                    <p>Access all courses with guided support.</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Scholarships</h3>
+                    <p>Apply for need-based assistance.</p>
+                    <p>Full access at no cost.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>
+                Have questions or need help? Reach out to our team at any time.
+            </p>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Native Nest. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
