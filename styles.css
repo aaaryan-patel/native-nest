@@ -1,59 +1,134 @@
+/* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #e9f4fc;
+  padding: 0;
   color: #333;
+  line-height: 1.6;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
 header {
-  background-color: #0056b3;
-  color: white;
-  padding: 20px;
+  background: #4caf50;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Navigation */
 nav {
-  display: flex;
-  justify-content: center;
-  background-color: #003c82;
-  padding: 10px;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 10px 0;
 }
 
 nav a {
-  color: white;
+  color: #333;
   text-decoration: none;
-  margin: 0 10px;
-  padding: 5px 10px;
-  border-radius: 5px;
+  margin: 0 15px;
+  font-weight: 600;
 }
 
 nav a:hover {
-  background-color: #0056b3;
+  color: #4caf50;
 }
 
+/* Main Section */
+main {
+  padding: 40px 0;
+}
+
+/* Hero Section */
 .hero {
+  background: #e9f5e6;
+  padding: 40px 0;
   text-align: center;
-  padding: 50px 20px;
-  background-color: #0074d9;
-  color: white;
 }
 
-footer {
-  background-color: #003c82;
-  color: white;
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero .cta-button {
+  display: inline-block;
+  background: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.hero .cta-button:hover {
+  background: #3e8e41;
+}
+
+/* Form Section */
+.form-section {
+  background: #fff;
+  padding: 20px;
   text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+}
+
+.form-section form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-section input {
+  width: 100%;
   padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-button {
-  background-color: #0074d9;
-  color: white;
+.form-section button {
+  background: #4caf50;
+  color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
-button:hover {
-  background-color: #0056b3;
+.form-section button:hover {
+  background: #3e8e41;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #f4f4f4;
+  padding: 10px 0;
+  color: #777;
+}
+
+footer p {
+  margin: 0;
 }
