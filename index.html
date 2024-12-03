@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Native Nest</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header Section -->
     <header class="header">
         <div class="container">
             <div class="logo">Native Nest</div>
@@ -22,36 +23,51 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <h2>About Us</h2>
+            <h1>Empowering Education in Your Language</h1>
+            <p>Breaking language barriers with world-class courses taught in native languages by TAs and former students.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Native Nest</h2>
             <p>
-                Native Nest bridges the gap in education by offering courses taught in native languages 
-                by experienced teaching assistants and former students. We empower students to learn 
-                effectively without language barriers.
+                At Native Nest, we believe language should never be a barrier to quality education. Our platform delivers institution-backed courses, tailored in native languages, empowering students to learn comfortably and confidently.
             </p>
         </div>
     </section>
 
     <!-- Courses Section -->
-    <section id="courses" class="section">
+    <section id="courses" class="section courses">
         <div class="container">
             <h2>Our Courses</h2>
-            <p>
-                We provide courses across diverse fields, each aligned with institutional curricula, 
-                tailored for students who prefer learning in their native languages.
-            </p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Science & Technology</h3>
+                    <p>Explore the frontiers of knowledge with expert guidance, in your native language.</p>
+                </div>
+                <div class="card">
+                    <h3>Business & Management</h3>
+                    <p>Learn the skills to excel in the corporate world with courses tailored to your understanding.</p>
+                </div>
+                <div class="card">
+                    <h3>Arts & Humanities</h3>
+                    <p>Dive into creative and critical thinking with rich, culturally relevant courses.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="section">
+    <section id="pricing" class="section pricing">
         <div class="container">
-            <h2>Pricing</h2>
+            <h2>Flexible Pricing</h2>
             <p>
-                Native Nest operates on a flexible model including subscriptions, grants, and scholarships, 
-                ensuring affordability for all students.
+                Native Nest operates on a flexible model, ensuring everyone has access to quality education through subscriptions, grants, or scholarships.
             </p>
         </div>
     </section>
@@ -62,25 +78,29 @@
             <h2>Contact Us</h2>
             <form>
                 <div class="form-group">
-                    <label for="name">Name:</label>
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message here" required></textarea>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" disabled>Submit</button>
+                <p class="form-notice">Backend integration is under development.</p>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Native Nest. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Native Nest. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
+
