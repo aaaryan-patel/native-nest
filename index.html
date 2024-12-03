@@ -1,61 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Native Nest - Multilingual education platform for enhanced learning.">
-  <title>Native Nest - Learn Smarter</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Native Nest - Multilingual education platform for enhanced learning.">
+    <title>Native Nest - Learn Smarter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS for a quick preview - Move to styles.css in production */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: #f7f8fc;
+            color: #333;
+        }
+        header {
+            background: #4caf50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        header p {
+            margin: 10px 0 0;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+        }
+        .hero a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: white;
+            color: #4caf50;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .hero a:hover {
+            background: #f0f0f0;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 20px;
+            color: #4caf50;
+        }
+        .features, .courses, .testimonials {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .features div, .courses div, .testimonials div {
+            width: 300px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <h1>Native Nest</h1>
-    <p>Empowering Multilingual Learning</p>
-  </header>
-
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="features.html">Features</a>
-    <a href="courses.html">Courses</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="login.html">Login</a>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Learn Better, Smarter</h2>
-    <p>Explore courses in your native language and understand like never before.</p>
-    <a href="features.html">Discover More</a>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features">
-    <h2>Why Choose Native Nest?</h2>
-    <div class="features">
-      <div>
-        <h3>Multilingual Courses</h3>
-        <img src="https://via.placeholder.com/200x150" alt="Languages">
-        <p>Learn in the language you're most comfortable with.</p>
-      </div>
-      <div>
-        <h3>Experienced TAs</h3>
-        <img src="https://via.placeholder.com/200x150" alt="Teaching Assistants">
-        <p>Get guided by teaching assistants and former students.</p>
-      </div>
-      <div>
-        <h3>Interactive Learning</h3>
-        <img src="https://via.placeholder.com/200x150" alt="Interactive Learning">
-        <p>Engage with dynamic and hands-on course material.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Native Nest. All rights reserved.</p>
-  </footer>
+    <header>
+        <h1>Native Nest</h1>
+        <p>Empowering Multilingual Learning</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#courses">Courses</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home" class="hero">
+        <h2>Learn Better, Smarter</h2>
+        <p>Explore courses in your native language and understand like never before.</p>
+        <a href="#features">Discover More</a>
+    </section>
+    <section id="features">
+        <h2>Features</h2>
+        <div class="features">
+            <div>
+                <h3>Multilingual Courses</h3>
+                <p>Learn in the language you're most comfortable with.</p>
+            </div>
+            <div>
+                <h3>Experienced TAs</h3>
+                <p>Get guided by teaching assistants and former students.</p>
+            </div>
+            <div>
+                <h3>Interactive Learning</h3>
+                <p>Engage with dynamic and hands-on course material.</p>
+            </div>
+        </div>
+    </section>
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="courses">
+            <div>
+                <h3>Data Science 101</h3>
+                <p>Start your journey in data science with step-by-step guides.</p>
+            </div>
+            <div>
+                <h3>Web Development</h3>
+                <p>Master the art of building websites from scratch.</p>
+            </div>
+            <div>
+                <h3>Business Basics</h3>
+                <p>Understand the fundamentals of entrepreneurship and management.</p>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonials">
+            <div>
+                <p>"Native Nest helped me ace my exams with materials in my native language!"</p>
+                <p>- Maria, Student</p>
+            </div>
+            <div>
+                <p>"A game-changer for non-native speakers. Highly recommend."</p>
+                <p>- Ahmed, Professional</p>
+            </div>
+            <div>
+                <p>"The TAs and community support make learning so much easier."</p>
+                <p>- Priya, Learner</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us at <a href="mailto:contact@nativenest.com">contact@nativenest.com</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Native Nest. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
